@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/*temas dark e light*/
+@media(prefers-color-scheme: light) {
+  :root {
+    --body-bg: #fff;
+    --body-color: #000
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-bg: #000;
+    --body-color: #fff;
+  }
+}
+
+body {
+  background-color: lightblue;
+  height: 100vh;
+  color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  background-color: var(--body-bg);
+  box-sizing: border-box;
+  width: 93.5%;
+  max-width: 600px;
+  height: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.form-header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.form-header button {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  height: 2rem;
+  padding: 0.25rem;
+  border-radius: 7.5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.button-container {
+  cursor: pointer;
+}
+
+.form-header .button-container:hover button {
+  background-color:rgb(80, 168, 240);
+  bottom: 2px;
+  left: 2px;
+}
+
+.form-header .button-container:active button {
+  background-color: gray;
+}
+
+form table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+form table thead {
+  background-color: lightgray;
+  text-align: left;
+}
+
+table thead th {
+  font-weight: bold;
+}
+
+table thead th, table tbody td{
+  padding: 2px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid lightgray;
+}
+
+table tbody td[class="table-button"] {
+  padding-left: 15px;
+  cursor: pointer;
+}
+
+.insert-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: lightgray;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.none {
+  display: none;
+}
+
+.insert-area label {
+  color: gray;
+  font-size: 0.85rem;
+}
+
+.insert-area input {
+  background-color: lightgray;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin-bottom: 15px;
+}
+
+.insert-area button {
+  color: #fff;
+  background-color: blue;
+  border: none;
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.insert-area button:hover {
+  background-color: rgb(80, 168, 240);
+}
+
+.insert-area button:active {
+  background-color: gray;
+}
+
+.insert-area input:focus {
+  border-bottom: 1px solid black;
+}

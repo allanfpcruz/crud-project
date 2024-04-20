@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--font awesome-->
+  <script src="https://kit.fontawesome.com/f0618b2f14.js" crossorigin="anonymous"></script>
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo/style.css">
+  <title>CRUD-project|Relembrando o básico</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+    <div class="form-header">
+      <h1>Cadastro de funcionários</h1>
+      <div class="button-container"><button id="button">Inserir</button></div>
+    </div>
+      <table>
+        <thead>
+          <th scope="col">Nome</th>
+          <th scope="col">Função</th>
+          <th scope="col">Salário</th>
+          <th scope="col">Editar</th>
+          <th scope="col">Excluir</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Allan</td>
+            <td>Desenvolverdor</td>
+            <td>R$3500,00</td>
+            <td class="table-button"><i class="fa-solid fa-trash"></i></td>
+            <td class="table-button"><i class="fa-solid fa-pen-to-square"></i></td>
+          </tr>
+          <tr>
+            <td>Allan</td>
+            <td>Desenvolverdor</td>
+            <td>R$3500,00</td>
+            <td class="table-button"><i class="fa-solid fa-trash"></i></td>
+            <td class="table-button"><i class="fa-solid fa-pen-to-square"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <div class="insert-area none">
+      <form>
+        <label for="nome">Digite o nome:</label>
+        <input type="text" id="nome" placeholder="nome">
+        <label for="funcao">Digite a função:</label>
+        <input type="text" id="funcao" placeholder="função">
+        <label for="salario">Digite o salário:</label>
+        <input type="number" id="salario" placeholder="salario">
+        <button>Confirmar</button>
+      </form>
+    </div>
+  </div>
+  <script src="scrip.js"></script>
+</body>
+</html>
