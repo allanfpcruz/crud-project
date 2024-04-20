@@ -14,10 +14,10 @@
 </head>
 <body>
   <div class="container">
-    <form>
+    <form id="form-area">
     <div class="form-header">
       <h1>Cadastro de funcionários</h1>
-      <div class="button-container"><button id="button">Inserir</button></div>
+      <div class="button-container"><button id="insert-button">Inserir</button></div>
     </div>
       <table>
         <thead>
@@ -27,20 +27,13 @@
           <th scope="col">Editar</th>
           <th scope="col">Excluir</th>
         </thead>
-        <tbody>
+        <tbody id="t-body">
           <tr>
             <td>Allan</td>
             <td>Desenvolverdor</td>
             <td>R$3500,00</td>
-            <td class="table-button"><i class="fa-solid fa-trash"></i></td>
             <td class="table-button"><i class="fa-solid fa-pen-to-square"></i></td>
-          </tr>
-          <tr>
-            <td>Allan</td>
-            <td>Desenvolverdor</td>
-            <td>R$3500,00</td>
             <td class="table-button"><i class="fa-solid fa-trash"></i></td>
-            <td class="table-button"><i class="fa-solid fa-pen-to-square"></i></td>
           </tr>
         </tbody>
       </table>
@@ -48,12 +41,12 @@
     <div class="insert-area none">
       <form>
         <label for="nome">Digite o nome:</label>
-        <input type="text" id="nome" placeholder="nome">
+        <input type="text" id="nome" placeholder="nome" autofocus>
         <label for="funcao">Digite a função:</label>
         <input type="text" id="funcao" placeholder="função">
         <label for="salario">Digite o salário:</label>
         <input type="number" id="salario" placeholder="salario">
-        <button>Confirmar</button>
+        <button id="confirm-button">Confirmar</button>
       </form>
     </div>
   </div>
